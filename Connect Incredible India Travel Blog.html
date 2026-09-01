@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Connect | Incredible India Travel Blog</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Baskerville Old Face", serif;
+      color: rgb(156, 13, 13);
+    }
+
+    body {
+      background-color: #E1D8F7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .registration-container {
+      background-color: #bca6dd90;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(150, 93, 194, 0.2);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      margin: 10px;
+    }
+
+    .registration-container img {
+      width: 100px;
+      height: auto;
+      border-radius: 50%;
+      border: 3px solid #C0A7EB;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #4b3270;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #C0A7EB;
+      border-radius: 8px;
+      background-color: #F5F2FB;
+      color: #333;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 16px;
+      background-color: #5b467a;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #C0A7EB;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .website-summary {
+      background-color: #D7C8F3;
+      padding: 15px;
+      border-radius: 10px;
+      margin: 20px auto;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 90%;
+    }
+
+    .website-summary p {
+      color: #4b3270;
+      font-size: 16px;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    @media (max-width: 600px) {
+      .registration-container {
+        width: 90%;
+        padding: 15px;
+      }
+
+      .website-summary {
+        padding: 10px;
+        max-width: 90%;
+      }
+
+      button {
+        padding: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="registration-container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy1ygSG9eKWwFS-QzIgzJNWT3yoXucUsAfzg&s" alt="Incredible India">
+    <h2>Customer Registration</h2>
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="fullname">Full Name: <span class="frm_required">*</span></label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address: <span class="frm_required">*</span></label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number: <span class="frm_required">*</span></label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+      </div>
+
+      <div class="form-group">
+        <label for="Destinations">Destinations: <span class="frm_required">*</span></label>
+        <select id="Places" name="destinations" required>
+          <option value="">Choose a destination</option>
+          <option value="Agra">Agra</option>
+          <option value="Bangalore">Bangalore</option>
+          <option value="Chandigarh">Chandigarh</option>
+          <option value="Dehradun">Dehradun</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Jaipur">Jaipur</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Nainital">Nainital</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Address: <span class="frm_required">*</span></label>
+        <textarea id="address" name="address" placeholder="Enter your address" rows="4" required></textarea>
+      </div>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <footer>
+      <p>&copy; 2025 Incredible India Travel Blog</p>
+    </footer>
+  </div>
+
+  <div class="website-summary">
+    <p><strong>Incredible India Travel Blog:</strong> Discover the unparalleled beauty, rich cultural heritage, and diverse landscapes of India through our comprehensive travel guides and personal anecdotes. Our blog is dedicated to helping travelers explore some of the most enchanting destinations in India, including the historical marvels of Agra, the serene hills of Dehradun, the vibrant streets of Delhi, the modern charm of Chandigarh, the peaceful lakes of Nainital, the royal heritage of Jaipur, and the bustling city life of Bangalore.
+    <br><br>
+    Our blog doesn't just stop at destination highlights. We provide detailed travel guides, tips on the best times to visit, cultural insights, and recommendations for local cuisine and activities. Whether you're planning a solo trip, a family vacation, or a romantic getaway, our guides are tailored to help you make the most of your journey.
+    Join us on this incredible journey across India, where every city and town tells a story of its own. From the majestic forts and palaces to serene backwaters and bustling markets, let "Incredible India Travel Blog" be your trusted companion in discovering the true essence of India. Experience the diversity, embrace the culture, and create memories that will last a lifetime.</p>
+  </div>
+</body>
+</html>
